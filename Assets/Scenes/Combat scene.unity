@@ -327,6 +327,10 @@ PrefabInstance:
       propertyPath: _message
       value: Let's make this up at my place
       objectReference: {fileID: 0}
+    - target: {fileID: 5830403936282207877, guid: 2d0404ebcb2e55045a62e3dfea211a52, type: 3}
+      propertyPath: _dialogueBubbleText
+      value: 
+      objectReference: {fileID: 1691533287}
     - target: {fileID: 8095685070299403460, guid: 2d0404ebcb2e55045a62e3dfea211a52, type: 3}
       propertyPath: m_Name
       value: Dialogue option Button template (1)
@@ -953,6 +957,10 @@ PrefabInstance:
       propertyPath: _message
       value: I want Icecream
       objectReference: {fileID: 0}
+    - target: {fileID: 5830403936282207877, guid: 2d0404ebcb2e55045a62e3dfea211a52, type: 3}
+      propertyPath: _dialogueBubbleText
+      value: 
+      objectReference: {fileID: 1691533287}
     - target: {fileID: 8095685070299403460, guid: 2d0404ebcb2e55045a62e3dfea211a52, type: 3}
       propertyPath: m_Name
       value: Dialogue option Button template (2)
@@ -1427,6 +1435,10 @@ PrefabInstance:
       propertyPath: _message
       value: Fuck you
       objectReference: {fileID: 0}
+    - target: {fileID: 5830403936282207877, guid: 2d0404ebcb2e55045a62e3dfea211a52, type: 3}
+      propertyPath: _dialogueBubbleText
+      value: 
+      objectReference: {fileID: 1691533287}
     - target: {fileID: 8095685070299403460, guid: 2d0404ebcb2e55045a62e3dfea211a52, type: 3}
       propertyPath: m_Name
       value: Dialogue option Button template
