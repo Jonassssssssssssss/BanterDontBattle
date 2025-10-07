@@ -22,7 +22,7 @@ public class SwitchsceneEnemy : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-                SceneManager.LoadScene("BattleScene");  
+                SceneManager.LoadScene("Combat scene");  
             }
         }
 }
