@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
         {
             if (playerDetected && playerTransform != null)
             {
-                StartCoroutine(ExecuteAfterSeconds(3f)); // 3f for 3 seconds delay
+                StartCoroutine(ExecuteAfterSeconds(2f)); 
                 //transform.position = Vector2.MoveTowards(transform.position, playerTransform.position, moveSpeed * Time.deltaTime);
             }
         }
