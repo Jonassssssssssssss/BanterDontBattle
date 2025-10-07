@@ -282,3 +282,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _message: New message
   _dialogueBubbleText: {fileID: 0}
+  _buttonText: {fileID: 8907077425073378365}

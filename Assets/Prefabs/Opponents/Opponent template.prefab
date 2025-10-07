@@ -49,19 +49,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5281fe16be9c6c4fbcd7a005c89cc20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueOptions:
-  - Message: Hi, how is your day.
-    Undertone: 0
-    AnswerOptions:
-    - Message: My day is good.
-      Undertone: 0
-    - Message: My life is falling apart
-      Undertone: 1
-  - Message: My life is falling apart.
-    Undertone: 1
-    AnswerOptions:
-    - Message: Lol
-      Undertone: 2
+  _dialogueOptions: []
+  _optionsButtons: {fileID: 8095685070299403460, guid: 2d0404ebcb2e55045a62e3dfea211a52, type: 3}
+  _optionsButtonsPositions: []
 --- !u!1 &7272841771322665274
 GameObject:
   m_ObjectHideFlags: 0

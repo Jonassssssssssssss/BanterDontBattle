@@ -10,6 +10,13 @@ public class CombatManager : MonoBehaviour
 
     OpponentDialogue OD;
 
+    void Start()
+    {
+        OD = GameObject.Find("Lars").GetComponent<OpponentDialogue>();
+
+        OD.NewDialaogue();
+    }
+
     void Update()
     {
         if (ProgressionPoints == 5) Victory();

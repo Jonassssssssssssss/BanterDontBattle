@@ -7,12 +7,14 @@ using TMPro;
 
 public class DialogueButtons : MonoBehaviour
 {
-    [SerializeField] string _message = "New message";
+    public string _message = "New message";
     [SerializeField] TextMeshProUGUI _dialogueBubbleText;
+    [SerializeField] TextMeshProUGUI _buttonText;
     CombatManager CM;
 
     public void ShowText()
     {
-        _dialogueBubbleText.text = _message;
+        //_dialogueBubbleText.text = _message;
+        _buttonText.text = _message;
     }
 }
