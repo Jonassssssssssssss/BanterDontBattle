@@ -9,6 +9,7 @@ public class DialogueButtons : MonoBehaviour
 {
     [SerializeField] string _message = "New message";
     [SerializeField] TextMeshProUGUI _dialogueBubbleText;
+    CombatManager CM;
 
     public void ShowText()
     {

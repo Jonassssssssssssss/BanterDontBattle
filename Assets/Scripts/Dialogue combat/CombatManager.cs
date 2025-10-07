@@ -8,6 +8,8 @@ public class CombatManager : MonoBehaviour
 
     [SerializeField] GameObject[] ProgressionPointVisuals;
 
+    OpponentDialogue OD;
+
     void Update()
     {
         if (ProgressionPoints == 5) Victory();
@@ -39,5 +41,10 @@ public class CombatManager : MonoBehaviour
         if (ProgressionPoints >= 4) ProgressionPointVisuals[3].SetActive(true);
 
         if (ProgressionPoints >= 5) ProgressionPointVisuals[4].SetActive(true);
+    }
+
+    public void PlayerHasMadeDecision()
+    {
+        OD.NewDialaogue();
     }
 }

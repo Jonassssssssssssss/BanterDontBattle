@@ -23,4 +23,15 @@ public class DialogueOptions
 public class OpponentDialogue : MonoBehaviour
 {
     [SerializeField] DialogueOptions[] _dialogueOptions;
+
+    void Update()
+    {
+
+    }
+
+    public void NewDialaogue()
+    {
+        int pickDialogue = Random.Range(0, _dialogueOptions.Length);
+
+    }
 }
