@@ -19,6 +19,8 @@ public class DialogueButtons : MonoBehaviour
     public delegate void SelectedOption();
     public static event SelectedOption selectedOption;
 
+    bool DontDestroyOnSpawn;
+
     void OnEnable()
     {
         DialogueButtons.selectedOption += SelectResponse;
@@ -31,7 +33,8 @@ public class DialogueButtons : MonoBehaviour
 
     void SelectResponse()
     {
-        Destroy(gameObject);
+        if (!DontDestroyOnSpawn) Destroy(gameObject);
+        else DontDestroyOnSpawn = false;
     }
 
     public void ShowText()
@@ -41,10 +44,20 @@ public class DialogueButtons : MonoBehaviour
 
     public void SelectOption()
     {
+        StartCoroutine(selectedoption());
+    }
+
+    IEnumerator selectedoption()
+    {
         GameObject bubble = Instantiate(_speachBubble, transform.position, Quaternion.identity);
         bubble.transform.SetParent(GameObject.Find("Speach bubble position").GetComponent<Transform>());
         bubble.transform.localPosition = Vector3.zero;
         bubble.GetComponent<SpeachBubble>().SetText(_message);
+
+        DontDestroyOnSpawn = true;
+        selectedOption();
+
+        yield return new WaitForSeconds(2f);
 
         selectedOption();
     }

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
+
 public class CombatManager : MonoBehaviour
 {
     public int ProgressionPoints;
@@ -29,7 +31,7 @@ public class CombatManager : MonoBehaviour
 
     void Victory()
     {
-        Debug.LogError("You Win");
+        SceneManager.LoadScene("World movement");
     }
 
     void UpdateProgressionPointVisuals()

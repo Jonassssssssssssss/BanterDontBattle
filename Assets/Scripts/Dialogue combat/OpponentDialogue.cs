@@ -6,7 +6,7 @@ using UnityEngine;
 public class AnswerOptions
 {
     public string Message;
-    public enum Undertones { Happy, Sad, Insulting, Uplifting, Nonsense, Mad};
+    public enum Undertones { Happy, Sad, Insulting, Uplifting, Nonsense, Mad, Appology, Funny};
     public Undertones Undertone;
 }
 
@@ -14,7 +14,7 @@ public class AnswerOptions
 public class DialogueOptions
 {
     public string Message;
-    public enum Undertones { Happy, Sad, Insulting, Uplifting, Nonsense, Mad};
+    public enum Undertones { Happy, Sad, Insulting, Uplifting, Nonsense, Mad, Appology, Funny};
     public Undertones Undertone;
 
     public AnswerOptions[] AnswerOptions;

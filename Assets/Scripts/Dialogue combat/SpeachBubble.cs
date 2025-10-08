@@ -23,11 +23,7 @@ public class SpeachBubble : MonoBehaviour
     void SelectResponse()
     {
         if (!DontDestroyOnSpawn) Destroy(gameObject);
-        else
-        {
-            Debug.Log("test test test");
-            DontDestroyOnSpawn = false;
-        }
+        else DontDestroyOnSpawn = false;
     }
 
     public void SetText(string text)
