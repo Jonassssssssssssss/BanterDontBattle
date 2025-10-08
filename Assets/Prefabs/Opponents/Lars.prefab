@@ -110,7 +110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
       propertyPath: _dialogueOptions.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
       propertyPath: _dialogueOptions.Array.data[0].Message
@@ -121,15 +121,27 @@ PrefabInstance:
       value: My life is falling apart.
       objectReference: {fileID: 0}
     - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
+      propertyPath: _dialogueOptions.Array.data[2].Message
+      value: What in Odin's name are you talking about, you freak?!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
       propertyPath: _dialogueOptions.Array.data[1].Undertone
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
+      propertyPath: _dialogueOptions.Array.data[2].Undertone
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
       propertyPath: _dialogueOptions.Array.data[0].AnswerOptions.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
       propertyPath: _dialogueOptions.Array.data[1].AnswerOptions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
+      propertyPath: _dialogueOptions.Array.data[2].AnswerOptions.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
@@ -141,7 +153,15 @@ PrefabInstance:
       value: My life is falling apart
       objectReference: {fileID: 0}
     - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
+      propertyPath: _dialogueOptions.Array.data[0].AnswerOptions.Array.data[2].Message
+      value: Did you say waffles?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
       propertyPath: _dialogueOptions.Array.data[1].AnswerOptions.Array.data[0].Message
+      value: Lol
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
+      propertyPath: _dialogueOptions.Array.data[2].AnswerOptions.Array.data[0].Message
       value: Lol
       objectReference: {fileID: 0}
     - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
@@ -149,7 +169,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
+      propertyPath: _dialogueOptions.Array.data[0].AnswerOptions.Array.data[2].Undertone
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
       propertyPath: _dialogueOptions.Array.data[1].AnswerOptions.Array.data[0].Undertone
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748631866004743842, guid: c516d27b22d792049929a03c43939fa0, type: 3}
+      propertyPath: _dialogueOptions.Array.data[2].AnswerOptions.Array.data[0].Undertone
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9045138200063976801, guid: c516d27b22d792049929a03c43939fa0, type: 3}

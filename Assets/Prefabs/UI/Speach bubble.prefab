@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4892736426095359755}
+  - component: {fileID: 2040158288976027909}
   m_Layer: 0
   m_Name: Speach bubble
   m_TagString: Untagged
@@ -38,6 +39,19 @@ RectTransform:
   m_AnchoredPosition: {x: 508, y: 374}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2040158288976027909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2672647646409229329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db881e7397ea844d8ae2d3177878289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 3929122707023063808}
 --- !u!1 &3105032880905279999
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,16 +77,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3105032880905279999}
-  m_LocalRotation: {x: 0.000000018442895, y: -0.00000017236589, z: 0.9719304, w: -0.23526871}
+  m_LocalRotation: {x: 0.0000000660889, y: -0.00000016025741, z: 0.86680096, w: -0.4986544}
   m_LocalPosition: {x: 0, y: 0, z: -3.637979e-12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4892736426095359755}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -152.785}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -120.178}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 170.49695, y: -171.7446}
+  m_AnchoredPosition: {x: 278, y: -104}
   m_SizeDelta: {x: 100, y: 227.4136}
   m_Pivot: {x: 0.5000002, y: 0.50000006}
 --- !u!222 &811872187917496898

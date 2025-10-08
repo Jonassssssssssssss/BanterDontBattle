@@ -7,6 +7,9 @@ using TMPro;
 
 public class DialogueButtons : MonoBehaviour
 {
+    public enum Undertones { Happy, Sad, Insulting, Uplifting, Nonsense, Mad };
+    public Undertones Undertone;
+
     public string _message = "New message";
     [SerializeField] TextMeshProUGUI _dialogueBubbleText;
     [SerializeField] TextMeshProUGUI _buttonText;
