@@ -14,10 +14,38 @@ public class DialogueButtons : MonoBehaviour
     [SerializeField] TextMeshProUGUI _dialogueBubbleText;
     [SerializeField] TextMeshProUGUI _buttonText;
     CombatManager CM;
+    [SerializeField] GameObject _speachBubble;
+
+    public delegate void SelectedOption();
+    public static event SelectedOption selectedOption;
+
+    void OnEnable()
+    {
+        DialogueButtons.selectedOption += SelectResponse;
+    }
+
+    void OnDisable()
+    {
+        DialogueButtons.selectedOption -= SelectResponse;
+    }
+
+    void SelectResponse()
+    {
+        Destroy(gameObject);
+    }
 
     public void ShowText()
     {
-        //_dialogueBubbleText.text = _message;
         _buttonText.text = _message;
+    }
+
+    public void SelectOption()
+    {
+        GameObject bubble = Instantiate(_speachBubble, transform.position, Quaternion.identity);
+        bubble.transform.SetParent(GameObject.Find("Speach bubble position").GetComponent<Transform>());
+        bubble.transform.localPosition = Vector3.zero;
+        bubble.GetComponent<SpeachBubble>().SetText(_message);
+
+        selectedOption();
     }
 }

@@ -30,6 +30,9 @@ public class OpponentDialogue : MonoBehaviour
     [SerializeField] Transform[] _optionsButtonsPositions;
     [SerializeField] Transform _speachBubblePosition;
 
+    public enum Emotion { Happy, Sad, Insulting, Uplifting, Nonsense, Mad };
+    public Emotion CurrentEmotion;
+
     void Update()
     {
         if (Input.GetKeyDown("f")) NewDialaogue();

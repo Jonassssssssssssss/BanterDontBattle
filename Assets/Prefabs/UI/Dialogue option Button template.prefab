@@ -258,7 +258,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5830403936282207877}
         m_TargetAssemblyTypeName: DialogueButtons, Assembly-CSharp
-        m_MethodName: ShowText
+        m_MethodName: SelectOption
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -280,6 +280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce82f54c2f6662343a3e515ac996ad42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Undertone: 0
   _message: New message
   _dialogueBubbleText: {fileID: 0}
   _buttonText: {fileID: 8907077425073378365}
+  _speachBubble: {fileID: 7951545885838384844, guid: 890f79c2c13490140aedffd16d9380a5, type: 3}
