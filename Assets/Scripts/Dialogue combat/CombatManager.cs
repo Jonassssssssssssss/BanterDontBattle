@@ -12,6 +12,9 @@ public class CombatManager : MonoBehaviour
 
     OpponentDialogue OD;
 
+    public enum OpponentEmotion { Happy, Sad, Insulting, Uplifting, Nonsense, Mad };
+    public OpponentEmotion opponentCurrentEmotion;
+
     void Start()
     {
         OD = GameObject.Find("Lars").GetComponent<OpponentDialogue>();
@@ -23,8 +26,8 @@ public class CombatManager : MonoBehaviour
     {
         if (ProgressionPoints == 5) Victory();
 
-        if (Input.GetKeyDown("x")) ProgressionPoints++;
-        if (Input.GetKeyDown("z")) ProgressionPoints--;
+        if (Input.GetKeyDown("x")) ProgressionPoints = Mathf.Clamp(ProgressionPoints += 1, 0, 5);
+        if (Input.GetKeyDown("z")) ProgressionPoints = Mathf.Clamp(ProgressionPoints -= 1, 0, 5);
 
         UpdateProgressionPointVisuals();
     }
@@ -55,5 +58,10 @@ public class CombatManager : MonoBehaviour
     public void PlayerHasMadeDecision()
     {
         OD.NewDialaogue();
+    }
+
+    public void Response()
+    {
+        //Switch (DialogueButtons.Undertone)
     }
 }
